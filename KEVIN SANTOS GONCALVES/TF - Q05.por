@@ -9,8 +9,6 @@ programa
             escreva("Número ", i + 1, ": ")
             leia(vetor[i])
         }
-        
-        // Ordenação usando o método de bolha
         para (inteiro j = 0; j < 9; j++) {
             para (inteiro k = 0; k < 9 - j; k++) {
                 se (vetor[k] > vetor[k + 1]) {

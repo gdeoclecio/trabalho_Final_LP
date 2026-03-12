@@ -25,7 +25,7 @@ programa
       escreva ("É um palindromo!")
     }
     senao{
-    escreva ("Não é Palindromo")
+    escreva ("Não é Palindromo!")
     }
   }
 }
