@@ -1,0 +1,182 @@
+GRUPO 3 - 
+
+DANIELLE CARVALHO FERREIRA
+@Danielle Carvalho 
+GABRIELA CARVALHO DOS SANTOS DEOCLECIO,
+@Gabriela Carvalho 
+GUILHERME SENA DE ARAÚJO,
+@Guilherme Sena 
+KEVIN SANTOS GONÇALVES,
+@kevingoncalves_07457
+LEONARDO DE MATTOS VEIGA,
+@Leo M V 
+PEDRO HENRIQUE DUTRA DOS REIS
+@Pedro Reis 
+
+Questões resolvidas por Leonardo de Mattos Veiga: Questões 3, 8 e 16.
+
+Questão 3 - Separar números pares e ímpares de um vetor
+ Descrição: Crie um programa que leia 10 números inteiros e armazene em um vetor. Depois, separe em dois vetores, um de impares e outro de pares, depois exiba os números ímpares e os
+pares separadamente.
+
+*Essa foi a questão que deu mais trabalho, seguindo o enunciado essa é a resposta que encontrei:
+*OBS = Coloquei uma resposta abaixo dessa por conta de uma dificuldade de entendimento com o enunciado, onde a resposta ficaria mais simples, e veio um entendimento melhor de vetores após as aulas de vetores e matrizes.
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro numeros[10]
+        inteiro pares[10]
+        inteiro impares[10]
+        inteiro i
+        inteiro par = 0
+        inteiro impar = 0
+
+        para (i = 0; i < 10; i = i + 1)
+        {
+            escreva("Digite um numero: ")
+            leia(numeros[i])
+
+            se (numeros[i] % 2 == 0)
+            {
+                pares[par] = numeros[i]
+                par = par + 1
+            }
+            senao
+            {
+                impares[impar] = numeros[i]
+                impar = impar + 1
+            }
+        }
+
+        escreva("\nNumeros pares:\n")
+
+        para (i = 0; i < par; i = i + 1)
+        {
+            escreva(pares[i], "\n")
+        }
+
+        escreva("\nNumeros impares:\n")
+
+        para (i = 0; i < impar; i = i + 1)
+        {
+            escreva(impares[i], "\n")
+        }
+    }
+}
+
+*A outra resposta seria pensando, na questão de um vetor para números pares e ímpares:
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro numeros[10]
+        inteiro i
+
+        // Leitura dos números
+        para (i = 0; i < 10; i = i + 1)
+        {
+            escreva("Digite um número: ")
+            leia(numeros[i])
+        }
+
+        escreva("\nNúmeros pares:\n")
+
+        // pares
+        para (i = 0; i < 10; i = i + 1)
+        {
+            se (numeros[i] % 2 == 0)
+            {
+                escreva(numeros[i], "\n")
+            }
+        }
+
+        escreva("\nNúmeros ímpares:\n")
+
+        // ímpares
+        para (i = 0; i < 10; i = i + 1)
+        {
+            se (numeros[i] % 2 != 0)
+            {
+                escreva(numeros[i], "\n")
+            }
+        }
+    }
+}
+
+
+Questão 8 - Verificar se um número é primo Descrição: Escreva um programa que solicite ao usuário um número e informe se ele é primo ou não.
+
+
+programa
+{
+    funcao inicio()
+    {
+        inteiro numero
+        inteiro i
+        inteiro divisores = 0
+
+        escreva("\nDigite um número: ")
+        leia(numero)
+
+        para (i = 1; i <= numero; i = i + 1)
+        {
+            se (numero % i == 0)
+            {
+                divisores = divisores + 1
+            }
+        }
+        se (divisores == 2)
+        {
+            escreva("\nO número é primo!!!")
+        }
+        senao
+        {
+            escreva("\nO número não é primo!!!")
+        }
+    }
+}
+
+Questão 16 - Contar Números Negativos em um Vetor .
+Descrição: Escreva uma função que receba um vetor de 10 números e retorne quantos são negativos. 
+
+programa
+{
+    inteiro vetor[10]
+
+    funcao inteiro contarNegativos()
+    {
+        inteiro i
+        inteiro contador
+        contador = 0
+
+        para(i = 0; i < 10; i = i + 1)
+        {
+            se(vetor[i] < 0)
+            {
+                contador = contador + 1
+            }
+        }
+
+        retorne contador
+    }
+
+    funcao inicio()
+    {
+        inteiro i
+        inteiro resultado
+
+        para(i = 0; i < 10; i = i + 1)
+        {
+            escreva("Digite um numero: ")
+            leia(vetor[i])
+        }
+
+        resultado = contarNegativos()
+
+        escreva("\nQuantidade de numeros negativos: ", resultado)
+    }
+}
+
