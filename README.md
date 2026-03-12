@@ -44,8 +44,6 @@ Este trabalho foi desenvolvido de forma colaborativa pelos seguintes membros:
 ---
 *Este projeto foi entregue como parte dos requisitos para aprovação na disciplina de Lógica de Programação.*
 
-## Trabalho Final de Lógica de Programação
-
 ---
 
 ### Divisão das questões por membros do grupo:
