@@ -70,8 +70,8 @@ Este trabalho foi desenvolvido de forma colaborativa pelos seguintes membros:
 - Questão 16 
 
 **KEVIN**
-- Questão 5 
-- Questão 7 
+- Questão 05 
+- Questão 07 
 - Questão 19
 
 **PEDRO**
